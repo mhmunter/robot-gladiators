@@ -80,8 +80,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   }
   // if no (false), ask question again by running fight() again
   else {
-    // var fight = function(enemyName)
-    // fight();
+    fight(enemyRobot)
   }
 }
 
