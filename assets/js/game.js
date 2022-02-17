@@ -95,7 +95,13 @@ var fight = function(enemyName) {
 // fight each enemy-robot by looping over them and fighting them one at a time
 for (var i = 0; i < enemyNames.length; i++) {
   // if player is still alive, keep fighting
+  // function to start a new game
+var startGame = function() {
+  for (var i = 0; i < enemyNames.length; i++) {
   if (playerHealth > 0) {
+    
+// start the game when the page loads
+startGame();
     // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
     window.alert('Welcome to Robot Gladiators! Round ' + (i + 1));
 
@@ -117,3 +123,5 @@ for (var i = 0; i < enemyNames.length; i++) {
     break;
   }
 }
+
+};
