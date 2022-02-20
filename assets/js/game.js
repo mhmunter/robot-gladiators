@@ -32,9 +32,16 @@ if (promptFight === "" || promptFight === null) {
   }
 }
 
+var isPlayerTurn = true;
+if (Math.random() > 0.5) {
+  isPlayerTurn = false;
+}  
+
 // fight function (now with parameter for enemy's object holding name, health, and attack values)
 var fight = function(enemy) {
   while (playerInfo.health > 0 && enemy.health > 0) {
+
+   
 
     fightOrSkip();
     // ask player if they'd like to fight or run
